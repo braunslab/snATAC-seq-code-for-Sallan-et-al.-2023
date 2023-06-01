@@ -229,7 +229,7 @@ ggplot(data=data)+
 
 ###################
 ## Find differentially-accessible peaks
-## Figure 4c
+
 
 p_val_adj_cutoff <- 0.05
 p_val_cutoff <- 0.05
