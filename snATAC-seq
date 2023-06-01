@@ -170,7 +170,7 @@ DimPlot(seu.atac, group.by = c("seurat_clusters"), label = T, repel = T, label.s
 
 ###################
 ## Count peaks with variable accessibility between control and exp, with peaks grouped into 4 main categories.
-## Figure 4b + Extended Data Figure 10(c, d)
+
 
 DefaultAssay(seu.atac) <- "ATAC"
 
@@ -259,7 +259,7 @@ DoHeatmap(seu.atac.GCB, cells = Cells(seu.atac.GCB), features = DEgenes, assay="
 
 ###################
 ## Motif with differential accessibility between control and exp
-## Figure 4d
+
 
 # ## Draw all cells
 # options(repr.plot.width=6, repr.plot.height=6)
@@ -318,7 +318,7 @@ Heatmap(mat_ave, name="chromvar",# column_title = "Ave. expr.", #column_title_ro
 
 ###################
 ## Look into specific region (e.g. Ighv1-72)
-## Figure 2i
+
 
 celltypes_involved <- c("GC B cells") #c("MZ B cells", "Follicular B", "Activated B cells", "GC B cells")#c("GCB cells I", "GCB cells II", "B cells", "MZ B cells")
 seu.atac.withRNA <- RenameAssays(object = seu.atac, activity = 'RNA')
